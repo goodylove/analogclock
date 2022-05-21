@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.page-contaniner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.clock-container{
+    background-color: blue;
+    border-radius: 10px 10px 10px 10px;
+    border: 10px solid blue;
+    border-top:5px solid red;
+}
+.clock{
+    display: flex;
+flex-direction: column;
+ border-radius: 50%; 
+width:200px;
+height: 200px;
+justify-content: center;
+align-items: center;
+background-color:white;
+border:2px solid black;
+font-weight: 600;
+}
+.one-eleven{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    /* margin: 10px; */
+    /* color: red; */
+}
+.ten-two{
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    margin: 10px;
+    /* color: blue; */
+    }
+    .nine-three{
+        position: relative;
+        display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 185px;
+    margin: 10px;
+    color:red;
+    
+    }
+    .twelve, .six{
+        color: blue;
+    }
+  
+    .eight-four{
+        display: flex;
+        justify-content: space-between;
+        width: 183px;
+        margin-top: 9px;
+    }
+    .seven-five{
+        display: flex;
+        justify-content: space-between;
+        width: 120px;
+        margin-top: 20px;
+    }
+    .hour{
+        position: absolute;
+        height: 56px;
+        width: 5px;
+        background: rgb(65, 222, 227);
+         z-index: 10;
+         transform-origin: top;
+         transform: rotateZ(180deg);
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px; 
+         border-radius: 50%;
+         border-top-left-radius: 10px;
+    }
+    .minute{
+        position: absolute;
+        height: 69px;
+        width: 5px;
+        background:black;
+        z-index: 10; 
+        transform-origin: bottom; 
+        transform-origin: top;
+       transform: rotateZ(180deg);
+       border-bottom-left-radius: 20px;
+       border-bottom-right-radius: 20px;
+        }
+        .seconds{
+            position: absolute;
+            height: 75px;
+            width: 2px;
+            background:red;
+            z-index: 10; 
+            transform-origin: bottom; 
+            transform-origin: top;
+            transform: rotateZ(180deg);
+        }
+          .container{
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color:black;
+            border-radius: 50%;
+            position: absolute;
+           z-index: 12;
+           text-align: center;
+           margin-left: -0.2em;
+           top: -1px;}
+            
+           
+         
+        
