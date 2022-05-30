@@ -1,21 +1,27 @@
 
-let hours = document.querySelector(".hour");
-let minute = document.querySelector(".minute");
-let second = document.querySelector(".seconds");
-let deg = 6;
+    let deg = 6;
+    let hours = document.querySelector(".hour");
+    let minute = document.querySelector(".minute");
+    let second = document.querySelector(".seconds");
+    
+    
+    setInterval(() => {
+let today = new Date();
 
-setInterval(() => {
-
-         let currentDay = new Date();
-         let currentHour = currentDay.getHours()*30
-         console.log(currentHour);
-        let currentMinutes =currentDay.getMinutes()*deg;
-        let currentSeconds = currentDay.getSeconds() *deg;
+let currentHour = today.getHours()
+// console.log(currentHour);
+let currentMinutes = today.getMinutes();
+let currentSeconds = today.getSeconds() ;
         
-        hours.style.transform = `rotateZ(${currentHour + (currentMinutes/12)}deg)`;
-        minute.style.transform = `rotateZ(${currentMinutes}deg)`;
-        second.style.transform = `rotateZ(${currentSeconds}deg)`;
-        console.log(currentHour + (currentMinutes)/12*deg)
+
+        let hr = currentHour*30;
+        console.log(hr);
+        let mins = currentMinutes * deg;
+        let sec = currentSeconds * deg;
+        hours.style.transform = `rotateZ(${hr + (mins/12)}deg)`;
+        minute.style.transform = `rotateZ(${mins}deg)`;
+        second.style.transform = `rotateZ(${sec}deg)`;
+    
         
         },1000);
         
