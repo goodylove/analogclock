@@ -80,7 +80,7 @@ text-shadow: 3px 1px 1px grey;
          z-index: 10;
          transform-origin: bottom;
          /* transform-origin: top; */
-         transform: rotateZ(360deg);
+         /* transform: rotateZ(360deg); */
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px; 
          border-radius: 50%;
@@ -95,7 +95,7 @@ text-shadow: 3px 1px 1px grey;
         bottom: 19px;
         transform-origin: bottom; 
         /* transform-origin: top; */
-       transform: rotateZ(360deg);
+       /* transform: rotateZ(360deg); */
        border-bottom-left-radius: 20px;
        border-bottom-right-radius: 20px;
         }
@@ -108,12 +108,12 @@ text-shadow: 3px 1px 1px grey;
             bottom: 20px; 
             transform-origin: bottom; 
             /* transform-origin: top; */
-            transform: rotateZ(360deg);
+            /* transform: rotateZ(360deg); */
         }
           .container{
             content: "";
-            width: 12px;
-            height: 12px;
+            width: 14px;
+            height: 14px;
             background-color:black;
             border-radius: 50%;
             position: absolute;
